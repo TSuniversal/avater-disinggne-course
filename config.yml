@@ -1,0 +1,16 @@
+title: avater disinggne
+description: What i give you the first feeling
+template:
+  repo: avater-disinggne-template
+  name: avater-disinggne
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
